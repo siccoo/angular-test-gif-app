@@ -14,7 +14,7 @@ export const loadMoreImages = (data) => {
     };
 };
 
-export const loadOneImages = (data) => {
+export const loadOneImage = (data) => {
     return {
         type: actionType.FETCHONEGIPHY,
         payload: data
