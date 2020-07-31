@@ -4,7 +4,7 @@ import Search from "./components/search";
 import * as actions from "actions";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import ImageCard from "../components/imageCard";
+import ImageCard from "./components/imageCard";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loading from "./components/loader";
 
