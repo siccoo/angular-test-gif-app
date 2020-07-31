@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Row, Container, CardDeck } from "react-bootstrap";
-import Search from "components/search";
-import * as actions from "redux/actions";
+import Search from "./components/search";
+import * as actions from "actions";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import ImageCard from "components/imageCard";
+import ImageCard from "../components/imageCard";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Loading from "components/loader";
+import Loading from "./components/loader";
 
 class Home extends Component {
     constructor() {
