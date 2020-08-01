@@ -27,14 +27,14 @@ class Home extends Component {
         this.setState({ loading: true });
         fetch(
             // `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}sphinx&limit=25&offset${this.state.offset}=0&rating=Y&lang=en`
-            `https://api.giphy.com/v1/gifs/search?api_key=AczTVuJ5qQDXC4PrEwvS4Hr4qyNVGIGQ&q=${this.state.search}&limit=20&offset=${this.state.offset}`
+            `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}&limit=25&offset=${this.state.offset}`
         )
             .then((data) => data.json())
             .then((data) => {
                 this.setState({ loading: false });
                 this.props.actions.fetchImages(data.data);
                 this.setState({
-                    offset: this.state.offset + 20,
+                    offset: this.state.offset + 25,
                     total: data.pagination.total_count,
                 });
             })
@@ -47,12 +47,12 @@ class Home extends Component {
     loadMore() {
         fetch(
             // `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}sphinx&limit=25&offset${this.state.offset}=0&rating=Y&lang=en`
-            `https://api.giphy.com/v1/gifs/search?api_key=AczTVuJ5qQDXC4PrEwvS4Hr4qyNVGIGQ&q=${this.state.search}&limit=20&offset=${this.state.offset}`
+            `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}&limit=20&offset=${this.state.offset}`
         )
             .then((data) => data.json())
             .then((data) => {
                 this.props.actions.loadMoreImages(data.data);
-                this.setState({ offset: this.state.offset + 20 });
+                this.setState({ offset: this.state.offset + 25 });
                 if (this.state.offset >= this.state.total) {
                     this.setState({ hasMore: false });
                 }

@@ -9,7 +9,7 @@ import {
 
 function search(props) {
     return (
-        <Jumbotron>
+        <Jumbotron className="search-section">
             <Form>
                 <InputGroup>
                     <FormControl
@@ -21,6 +21,7 @@ function search(props) {
                     />
                     <InputGroup.Append>
                         <Button
+                            className="search-btn"
                             variant="outline-secondary"
                             onClick={props.search}
                         >

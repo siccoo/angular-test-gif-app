@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #021a38;
 }
 
 code {
@@ -23,5 +24,28 @@ code {
 
 .navbar-text {
   color: #fff;
-  /* text-align: center !important; */
+}
+
+.navbar-text:hover {
+  color: #fff;
+}
+
+.spinner {
+  background: #021a38;
+  color: #ffff;
+}
+
+.search-section {
+  background: #021a38;
+}
+
+.search-btn {
+  color: #fff; 
+  border: 1px solid #fff; 
+}
+
+.search-btn:hover {
+  background: #021a38 !important;
+  color: #fff;
+  border: 1px solid #fff !important;
 }
