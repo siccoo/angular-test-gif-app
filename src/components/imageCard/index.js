@@ -5,9 +5,9 @@ import { Card, Col } from "react-bootstrap";
 
 export default function ImageCard(props) {
     return (
-        <Col sm={6} md={3}>
+        <Col xs={6} md={4}>
             <Link to={`/view/${props.data.id}`}>
-                <Card>
+                <Card className="image-card">
                     <Card.Img
                         variant="top"
                         src={props.data.images.downsized_large.url}

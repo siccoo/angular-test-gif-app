@@ -40,3 +40,12 @@ body {
   color: #fff;
   border: 1px solid #fff !important;
 }
+
+/* imageCard/index.js styles starts */
+
+.image-card {
+  padding: 2px;
+  margin: 2px;
+}
+
+/* imageCard/index.js styles starts */

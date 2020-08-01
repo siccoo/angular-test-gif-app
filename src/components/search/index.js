@@ -13,7 +13,7 @@ function search(props) {
             <Form>
                 <InputGroup>
                     <FormControl
-                        placeholder="Enter Keyword"
+                        placeholder="Search for gifs here"
                         aria-label="Keyword"
                         aria-describedby="basic-addon2"
                         name="search"

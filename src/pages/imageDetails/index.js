@@ -63,7 +63,7 @@ class ImageDetails extends Component {
                                 <Card.Header as="h5">User</Card.Header>
                                 <Card.Body>
                                     <Card.Title>
-                                        {this.state.image.user.username}
+                                        {this.state.image.username}
                                     </Card.Title>
                                 </Card.Body>
                             </Card>
