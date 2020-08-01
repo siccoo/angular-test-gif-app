@@ -26,7 +26,6 @@ class Home extends Component {
     searchImage() {
         this.setState({ loading: true });
         fetch(
-            // `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}sphinx&limit=25&offset${this.state.offset}=0&rating=Y&lang=en`
             `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}&limit=25&offset=${this.state.offset}`
         )
             .then((data) => data.json())
@@ -46,8 +45,7 @@ class Home extends Component {
 
     loadMore() {
         fetch(
-            // `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}sphinx&limit=25&offset${this.state.offset}=0&rating=Y&lang=en`
-            `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}&limit=20&offset=${this.state.offset}`
+            `https://api.giphy.com/v1/gifs/search?api_key=deokzgUjxm6QHQdp3H3aca1LSZcCpucc&q=${this.state.search}&limit=25&offset=${this.state.offset}`
         )
             .then((data) => data.json())
             .then((data) => {

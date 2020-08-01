@@ -4,9 +4,15 @@ body {
   background: #021a38;
 }
 
+/* HOME/INDEX.JS STYLING STARTS */
+
 .main-body {
   margin-top: 20px;
 }
+
+/* HOME/INDEX.JS STYLING ENDS */
+
+/* NAVBAR STYLING STARTS */
 
 .nav-bar {
   background-color: #000;
@@ -21,10 +27,18 @@ body {
   color: #fff;
 }
 
+/* NAVBAR STYLING ENDS */
+
+/* LOADER/INDEX.JS STARTS */
+
 .spinner {
   background: #021a38;
   color: #ffff;
 }
+
+/* LOADER/INDEX.JS ENDS */
+
+/* SEARCH/INDEX.JS STARTS */
 
 .search-section {
   background: #021a38;
@@ -41,11 +55,13 @@ body {
   border: 1px solid #fff !important;
 }
 
-/* imageCard/index.js styles starts */
+/* SEARCH/INDEX.JS STARTS */
+
+/* IMAGECARD/INDEX.JS STARTS */
 
 .image-card {
   padding: 2px;
   margin: 2px;
 }
 
-/* imageCard/index.js styles starts */
+/* IMAGECARD/INDEX.JS ENDS */
