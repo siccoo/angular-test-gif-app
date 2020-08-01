@@ -5,8 +5,8 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="/">
+                <Navbar bg="black" variant="black" className="nav-bar">
+                    <Navbar.Brand href="/" className="navbar-text">
                         <img
                             alt=""
                             src="/giphy_mark.png"
@@ -14,7 +14,7 @@ class Header extends Component {
                             height="30"
                             className="d-inline-block align-top"
                         />
-                        GIPHY
+                        GIPHYSearch
                     </Navbar.Brand>
                 </Navbar>
             </>

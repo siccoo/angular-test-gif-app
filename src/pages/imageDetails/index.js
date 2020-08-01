@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Row, Container, Col, Card } from "react-bootstrap";
-import * as actions from "redux/actions";
+import * as actions from "actions";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import Loading from "components/loader";

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/home";
-import ImageDetails from "./pages/imageDetails";
+import ImageDetails from "pages/imageDetails";
 
 class App extends Component {
     render() {
